@@ -1,0 +1,5 @@
+hostname =  ios-api-*.duolingo.*,api*.duolingo.*
+
+^https?:\/\/(?:ios-api-[^.]+|api[^.]+)\.duolingo\.[a-z.]+\/\d{4}-\d{1,2}-\d{1,2}\/batch url script-response-body https://raw.githubusercontent.com/sbc2fjbdn5-prog/dlg/refs/heads/main/duolingo_batch.js
+^https?:\/\/(?:ios-api-[^.]+|api[^.]+)\.duolingo\.[a-z.]+\/.*\/users\/.*\/available-features.*$ url script-response-body https://raw.githubusercontent.com/sbc2fjbdn5-prog/dlg/refs/heads/main/duolingo_features.js
+^https?:\/\/(?:ios-api-[^.]+|api[^.]+)\.duolingo\.[a-z.]+\/.*\/users\/.*\?fields=subscriberLevel url script-response-body https://raw.githubusercontent.com/sbc2fjbdn5-prog/dlg/refs/heads/main/duolingo_level.js
